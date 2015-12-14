@@ -7,6 +7,7 @@ angular.module('budgetApp.controllers', [])
     $scope.cic = 3000;
     $scope.transport = 3000;
     $scope.food = 5000;
+    $scope.dt = new Date();
 
     $scope.result = function() {
       return $scope.salary - (0.1 * $scope.salary) - $scope.rent - $scope.transport - $scope.food - $scope.electricity - $scope.phone - $scope.cic;
