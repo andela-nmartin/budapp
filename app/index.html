@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" ng-app='budgetApp'>
+
+<head>
+  <title>AngularJS Budget App</title>
+  <!-- cdns -->
+  <script type="text/javascript" src=" http://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+
+<body ng-controller='FinanceController'>
+<div class="container">
+  <div class="jumbotron">
+    <h2>Budget</h2>
+  </div>
+  <section>
+    Your Salary?
+    <input type="text" ng-model="salary">
+    <br/>Rent
+    <input type="text" ng-model="rent">
+    <br/>Electricity
+    <input type="text" ng-model="electricity">
+    <br/>Phone Bill
+    <input type="text" ng-model="phone">
+    <br/>CIC
+    <input type="text" ng-model="cic">
+    <br/>Tithe (10% * salary)
+    <span>{{ 0.1 * salary }}</span>
+    <br/>Transport
+    <input type="text" ng-model="transport">
+    <br/>Food
+    <input type="text" ng-model="food">
+    <br/><b>Miscellaneous /Savings:
+    <span>{{ result() | currency }}</span></b>
+  </section>
+  </div>
+  <!-- scripts -->
+  <script src="scripts/app.js"></script>
+  <script src="scripts/controllers.js"></script>
+</body>
+
+</html>

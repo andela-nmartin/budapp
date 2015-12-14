@@ -1,0 +1,1 @@
+angular.module('budgetApp', ['budgetApp.controllers']);

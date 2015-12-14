@@ -1,0 +1,22 @@
+{
+  "name": "angular_practice",
+  "version": "1.0.0",
+  "description": "angular",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andela-nmartin/budapp.git"
+  },
+  "keywords": [
+    "budget"
+  ],
+  "author": "NM",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andela-nmartin/budapp/issues"
+  },
+  "homepage": "https://github.com/andela-nmartin/budapp#readme"
+}
